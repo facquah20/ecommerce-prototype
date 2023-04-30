@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Page</title>
+
+    <!-- Add the Font Awesome CDN link below -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="userPage.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+      <div class="logo"><a href="#">Logo</a></div>
+      <div class="hamburger-menu"><i class="fa fa-bars"></i></div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Category</a></li>
+      </ul>
+    </nav>
+  </header>
+  <script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
+
+hamburgerMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+fetch('http://localhost:5500/products-listings').then(res=>res.json())
+.then(result=>console.log(result))
+.catch(err=>console.log(err));
+  </script>
+
+</body>
+
+  </html>
+  
