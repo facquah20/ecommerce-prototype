@@ -14,6 +14,5 @@ To start the backend server first navigate to the backend directory by running "
 Then, run "node index.js"
 This will start the server from at the port in your environment variables or port 3000.
 
-#Endpoints
-All the endpoints of server can be found in the index.js file
-you can try them using postman
+# Endpoints
+All the endpoints of server can be found in the index.js file. You can test them using postman
