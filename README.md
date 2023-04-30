@@ -5,7 +5,7 @@ The main folder comprises of Backend and Frontend subfolders
 The backend folder contains files that interacts with json files in the directory
 Index.js is the entry file of the backend code. It contains the url that the frontend will use.
 
-#Libraries used
+# Libraries used
 Since the project is a protoype no external libraries were used, that is, the core node modules were used
 No database was used as well other than the json files found in my backend directory
 
